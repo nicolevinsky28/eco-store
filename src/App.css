@@ -8,7 +8,7 @@
 header{
   text-align: center;
   background-color: #98ff96;
-  font-size: 25px;
+  font-size: 20px;
   padding: 1em;
 }
 
@@ -41,6 +41,10 @@ ul li a:hover{
 }
 
 .logoNav{
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
+}
+carrito{
+  padding: 0em;
+  margin: 0em;
 }

@@ -1,4 +1,5 @@
 import logo from '../media/tiendaLogo.png'
+import CardWidget from './CardWidget'
 import "../App.css"
 
 
@@ -14,6 +15,9 @@ const NavBar = () =>{
     <li><a href="">Ofertas</a></li>
     <li><a href="">Lo mas nuevo</a></li>
   </ul>
+  <div className="carrito">
+    <CardWidget />
+  </div>
 </div>
 </header>
       </>
