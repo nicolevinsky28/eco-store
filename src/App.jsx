@@ -1,5 +1,6 @@
 import NavBar from './Components/NavBar'
 import ItemListContainer from './Components/ItemListContainer'
+import ContadorProductos from './Components/ContadorProductos'
 
 
 const App = () =>{
@@ -7,6 +8,7 @@ const App = () =>{
     <div>
       <NavBar/>
         <ItemListContainer greeting="Este es el ItemListContainer"/>
+        <ContadorProductos />
     </div>
   )
 }

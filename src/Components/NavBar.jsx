@@ -10,16 +10,17 @@ const NavBar = () =>{
 <div className="contentNavBar">
 <img class="logoNav" src={logo} alt="Logo" />
   <ul className="items">
-    <li><a href="">Inicio</a></li>
-    <li><a href="">Categorias</a></li>
-    <li><a href="">Ofertas</a></li>
-    <li><a href="">Lo mas nuevo</a></li>
+    <li><a href="https://github.com/">Inicio</a></li>
+    <li><a href="https://github.com/">Categorias</a></li>
+    <li><a href="https://github.com/">Ofertas</a></li>
+    <li><a href="https://github.com/">Lo mas nuevo</a></li>
   </ul>
   <div className="carrito">
     <CardWidget />
   </div>
 </div>
 </header>
+
       </>
     )
     
