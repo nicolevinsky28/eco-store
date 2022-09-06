@@ -3,8 +3,8 @@ import { useNumeroContador } from 'react';
 
 
 const ContadorProductos = (numero) =>{
-   numero = 0
-    const [numeroContador, setNumeroContador] = useNumeroContador(0);
+  numero = 0
+    const [numeroContador, setNumeroContador] = useNumeroContador(numero);
     const sumar = () => {
         setNumeroContador(numeroContador+1);
     }
@@ -12,7 +12,7 @@ const ContadorProductos = (numero) =>{
       setNumeroContador(numeroContador-1);
   }
     return(
-      <div className="contador">
+      <div>
         numer
         <button onClick={sumar}>+</button> 
         <p>{numero}</p>
