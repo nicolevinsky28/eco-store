@@ -48,3 +48,43 @@ carrito{
   padding: 0em;
   margin: 0em;
 }
+
+.contentProducto{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.producto{
+  text-align: center;
+  margin: 2em;
+  height: 450px;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #beffbd;
+  z-index: 20em;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.151);
+}
+
+.producto img{
+  margin-top:1em ;
+  height: 200px;
+  width: 300px;
+}
+.producto h2{
+  margin: 1em 0em 0.5em 0em;
+  color: #0e380e;
+}
+.producto h3{
+  margin: 0.2em 0em 0em 1em;
+  color: #0e380e;
+  text-align: left;
+}
+
+.producto p{
+  margin: 1em 0em 0em 1em;
+  color: #0e380e;
+  text-align: left;
+  font-size: 18px;
+}
+

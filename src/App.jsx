@@ -1,14 +1,15 @@
 import NavBar from './Components/NavBar'
-import ItemListContainer from './Components/ItemListContainer'
-import ContadorProductos from './Components/ContadorProductos'
+import ItemListContainer from './Contenedores/ItemListContainer'
+
 
 
 const App = () =>{
   return(
     <div>
       <NavBar/>
-        <ItemListContainer greeting="Este es el ItemListContainer"/>
-        <ContadorProductos />
+      <div className='contentProducto'>
+      <ItemListContainer />
+      </div>
     </div>
   )
 }
