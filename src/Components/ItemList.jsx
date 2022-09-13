@@ -1,11 +1,11 @@
 
-const ItemList = ({foto, titulo, precio, des, material}) =>{
+const ItemList = ({foto, titulo, precio, des, material, item}) =>{
 
 
     return(
     <div className="producto">
          <img src={foto} alt="" />
-         <h2>{titulo}</h2>
+         <h2>{item}</h2>
          <h3>Precio: ${precio}</h3>
          <h3>Material: {material}</h3>
          <p>{des}</p>

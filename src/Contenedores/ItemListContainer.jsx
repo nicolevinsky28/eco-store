@@ -6,7 +6,7 @@ const listProducts = [
 
   {
       id:0,
-      foto: "https://www.diegocomputacion.com.ar/wp-content/uploads/2020/09/cable-vga.jpg",
+      foto: "https://images-na.ssl-images-amazon.com/images/I/71wyQL2hywS._AC._SR360,460.jpg",
       titulo: "Cable",
       precio: "460",
       material: "Goma",
@@ -18,7 +18,14 @@ const listProducts = [
       titulo: "Cable",
       material: "Goma",
       des:"lorem ipsum"
-  }
+  },
+  {
+    id:2,
+    foto: "https://www.diegocomputacion.com.ar/wp-content/uploads/2020/09/cable-vga.jpg",
+    titulo: "Cable",
+    material: "Goma",
+    des:"lorem ipsum"
+}
 ]
 
 const ItemListContainer = () => {

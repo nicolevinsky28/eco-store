@@ -1,17 +1,9 @@
-import NavBar from './Components/NavBar'
-import ItemListContainer from './Contenedores/ItemListContainer'
+import Home from './Pages/Home'
 
 
 
 const App = () =>{
-  return(
-    <div>
-      <NavBar/>
-      <div className='contentProducto'>
-      <ItemListContainer />
-      </div>
-    </div>
-  )
+  return <Home />
 }
 /* Formas de llamar una funcion de js desde un return:         {Curso()}  o <Curso /> */
 
