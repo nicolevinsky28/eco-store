@@ -1,4 +1,4 @@
-/*import {Badge} from "@mui/material"
+import {Badge} from "@mui/material"
 import {ShoppingCartOutlined} from "@mui/icons-material"
 
 
@@ -10,4 +10,4 @@ const CardWidget = () =>{
     )
   }
 
-export default CardWidget*/
+export default CardWidget

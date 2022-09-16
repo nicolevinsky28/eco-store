@@ -1,7 +1,7 @@
 import ItemDetail from '../Components/ItemDetail'
 import { useEffect, useState } from 'react'
 import customFetch from '../utilidades/promesaRenderData'
-
+import { useParams } from 'react-router-dom'
 const listProducts = [
 
     {
@@ -31,13 +31,19 @@ const listProducts = [
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({})
- 
+    const { idItem } = useParams()
+
     useEffect(() =>{
-     customFetch(2000, listProducts[0])
-     .then(datos =>{setData(listProducts[0])})
-     .catch(err =>{console.log("Error")})
-    }, [])
-   
+      if ( idItem ){
+        customFetch(2000, listProducts.find(item => item.id == idItem))
+        .then(datos =>setData(datos))
+        .catch(err =>{console.log(err)})
+      } else{
+        customFetch(2000, listProducts)
+        .then(datos =>{setData(listProducts)})
+        .catch(err =>{console.log(err)})
+      }
+     }, [idItem])
      return (
 
        <>

@@ -1,19 +1,19 @@
 import logo from '../media/tiendaLogo.png'
 import CardWidget from './CardWidget'
 import "../App.css"
-
+import { Link } from 'react-router-dom'
 
 const NavBar = () =>{
     return(
       <>
       <header>
 <div className="contentNavBar">
-<img class="logoNav" src={logo} alt="Logo" />
+   <Link to='/'> <img class="logoNav" src={logo} alt="Logo" /> </Link>
   <ul className="items">
-    <li><a href="https://github.com/">Inicio</a></li>
-    <li><a href="https://github.com/">Categorias</a></li>
-    <li><a href="https://github.com/">Ofertas</a></li>
-    <li><a href="https://github.com/">Lo mas nuevo</a></li>
+  <Link to='/'> <li><a>Inicio</a></li> </Link>
+  <Link to='/category/2'> <li><a>Vivero</a></li> </Link>  
+  <Link to='/category/1'> <li><a>Biodegradables</a></li> </Link>   
+  <Link to='/category/3'> <li><a href="">Indumentaria</a></li> </Link> 
   </ul>
   <div className="carrito">
     <CardWidget />

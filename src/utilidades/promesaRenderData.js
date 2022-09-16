@@ -9,7 +9,7 @@
             resolve(task)
           }, time)
         } else{
-          reject('error')
+          reject('Error')
         }
       }
       )}

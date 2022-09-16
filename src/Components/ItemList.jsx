@@ -1,5 +1,5 @@
-
-const ItemList = ({foto, titulo, precio, des, material, item}) =>{
+import { Link } from 'react-router-dom'
+const ItemList = ({foto, titulo, precio, des, material, item, id}) =>{
 
 
     return(
@@ -9,6 +9,7 @@ const ItemList = ({foto, titulo, precio, des, material, item}) =>{
          <h3>Precio: ${precio}</h3>
          <h3>Material: {material}</h3>
          <p>{des}</p>
+        <Link to={`/item/${id}`}><button>Ver detalles</button></Link>
     </div>
     )
 }
